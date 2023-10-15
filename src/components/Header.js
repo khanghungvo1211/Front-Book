@@ -120,9 +120,9 @@ const Header = () => {
                 <div className='menu-links'>
                   <div className='d-flex align-items-center gap-15'>
                     <NavLink to="/" style={{ color: '#326e51' }}>Home</NavLink>
-                    <NavLink to="/" style={{ color: '#326e51' }}>All Product</NavLink>
-                    <NavLink to="/" style={{ color: '#326e51' }}>Blogs</NavLink>
-                    <NavLink to="/" style={{ color: '#326e51' }}>Contact Us</NavLink>
+                    <NavLink to="/allproduct" style={{ color: '#326e51' }}>All Product</NavLink>
+                    <NavLink to="/beautyblog" style={{ color: '#326e51' }}>Beauty Blog</NavLink>
+                    <NavLink to="/contact" style={{ color: '#326e51' }}>Contact Us</NavLink>
                   </div>
                 </div>
               </div>
