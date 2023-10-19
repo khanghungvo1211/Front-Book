@@ -8,6 +8,9 @@ import Contact from './pages/Contact';
 import AllProduct from './pages/AllProduct';
 import BeautyBlog from './pages/BeautyBlog';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Forgotpassword from './pages/Forgotpassword';
+import Resetpassword from './pages/Resetpassword';
 
 
 
@@ -23,6 +26,9 @@ function App() {
               <Route path='allproduct' element={<AllProduct />} />
               <Route path='beautyblog' element={<BeautyBlog />} />
               <Route path='login' element={<Login />} />
+              <Route path='signup' element={<Signup />} />
+              <Route path='forgot-password' element={<Forgotpassword />} />
+              <Route path='reset-password' element={<Resetpassword />} />
           </Route>
         </Routes>
        </BrowserRouter>
