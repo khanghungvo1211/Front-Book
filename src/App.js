@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import AllProduct from './pages/AllProduct';
 import BeautyBlog from './pages/BeautyBlog';
+import Login from './pages/Login';
 
 
 
@@ -21,6 +22,7 @@ function App() {
               <Route path='contact' element={<Contact />} />
               <Route path='allproduct' element={<AllProduct />} />
               <Route path='beautyblog' element={<BeautyBlog />} />
+              <Route path='login' element={<Login />} />
           </Route>
         </Routes>
        </BrowserRouter>
