@@ -10,27 +10,27 @@ const Login = () => {
             <BreadCrumb title="Login" />
 
             <div className="login-wrapper py-5 home-wrapper-2">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="auth-card">
-                            <h3 className="text-center mb-3">Login</h3>
-                            <form action="" className="d-flex flex-column gap-15">
-                                <form action="">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="auth-card">
+                                <h3 className="text-center mb-3">Login</h3>
+                                <form action="" className="d-flex flex-column gap-15">
                                     <div>
                                         <input
-                                            type="email"
-                                            name="email"
-                                            placeholder="Email"
+                                            type="password"
+                                            name="password"
+                                            placeholder="Password"
                                             className="form-control" />
                                     </div>
                                     <div>
                                         <input
-                                            type="email"
-                                            name="email"
-                                            placeholder="Email"
+                                            type="password"
+                                            name="confirmpassword"
+                                            placeholder="Confirm Password"
                                             className="form-control" />
                                     </div>
-                                </form>
+                               
                                 <div>
                                     <Link to="/forgot-password">Forgot Password?</Link>
 
@@ -43,11 +43,12 @@ const Login = () => {
                                         </Link>
                                     </div>
                                 </div>
-                            </form>
+                                </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div >
         </>
     );
 };
