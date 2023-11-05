@@ -4,124 +4,73 @@ import Marquee from 'react-fast-marquee'
 import BlogCard from '../components/BlogCard'
 import ProductCard from '../components/ProductCard'
 import FlashSale from '../components/FlashSale'
+import { Container } from 'react-bootstrap'
+
 const Home = () => {
   return <>
-    <section className='home-wrapper-1 py-5'>
-      <div className='container-xxl'>
-        <div className='row'>
-          <div className='col-6'>
-            <div className='main-banner position-relative '>
-              <img src='image/main-banner.jpg'
+    <Container class1='home-wrapper-1 py-5'>
+      <div className='row'>
+        <div className='col-6'>
+          <div className='main-banner position-relative '>
+            <img src='image/main-banner.jpg'
+              className='img-fluid rounded-3'
+              alt='main banner' />
+            <div className='main-banner-content position-absolute'>
+              <h4>NEW PRODUCT</h4>
+              <h5>ROUGE COCO</h5>
+              <p>Mo ta sp</p>
+              <Link className='button'>SHOP NOW</Link>
+            </div>
+          </div>
+        </div>
+        <div className='col-6'>
+          <div className='d-flex flex-wrap gap-10 justify-content-between align-items-center'>
+            <div className='small-banner position-relative '>
+              <img src='image/catbanner-01.jpg'
                 className='img-fluid rounded-3'
                 alt='main banner' />
-              <div className='main-banner-content position-absolute'>
+              <div className='small-banner-content position-absolute'>
                 <h4>NEW PRODUCT</h4>
                 <h5>ROUGE COCO</h5>
-                <p>Mo ta sp</p>
-                <Link className='button'>SHOP NOW</Link>
-
+                <p>Mo ta <br />sp</p>
               </div>
-
-
 
             </div>
-          </div>
-          <div className='col-6'>
-            <div className='d-flex flex-wrap gap-10 justify-content-between align-items-center'>
-              <div className='small-banner position-relative '>
-                <img src='image/catbanner-01.jpg'
-                  className='img-fluid rounded-3'
-                  alt='main banner' />
-                <div className='small-banner-content position-absolute'>
-                  <h4>NEW PRODUCT</h4>
-                  <h5>ROUGE COCO</h5>
-                  <p>Mo ta <br />sp</p>
-                </div>
-
+            <div className='small-banner position-relative '>
+              <img src='image/catbanner-02.jpg'
+                className='img-fluid rounded-3'
+                alt='main banner' />
+              <div className='small-banner-content position-absolute'>
+                <h4>Demo</h4>
+                <h5>Demo</h5>
+                <p>Demo</p>
               </div>
-              <div className='small-banner position-relative '>
-                <img src='image/catbanner-02.jpg'
-                  className='img-fluid rounded-3'
-                  alt='main banner' />
-                <div className='small-banner-content position-absolute'>
-                  <h4>Demo</h4>
-                  <h5>Demo</h5>
-                  <p>Demo</p>
-                </div>
 
-              </div> <div className='small-banner position-relative '>
-                <img src='image/catbanner-03.jpg'
-                  className='img-fluid rounded-3'
-                  alt='main banner' />
-                <div className='small-banner-content position-absolute'>
-                  <h4>Demo</h4>
-                  <h5>Demo</h5>
-                  <p>Demo</p>
-                </div>
-
-              </div> <div className='small-banner position-relative '>
-                <img src='image/catbanner-04.jpg'
-                  className='img-fluid rounded-3'
-                  alt='main banner' />
-                <div className='small-banner-content position-absolute'>
-                  <h4>Demo</h4>
-                  <h5>Demo</h5>
-                  <p>Demo</p>
-                </div>
-
+            </div> <div className='small-banner position-relative '>
+              <img src='image/catbanner-03.jpg'
+                className='img-fluid rounded-3'
+                alt='main banner' />
+              <div className='small-banner-content position-absolute'>
+                <h4>Demo</h4>
+                <h5>Demo</h5>
+                <p>Demo</p>
               </div>
+
+            </div> <div className='small-banner position-relative '>
+              <img src='image/catbanner-04.jpg'
+                className='img-fluid rounded-3'
+                alt='main banner' />
+              <div className='small-banner-content position-absolute'>
+                <h4>Demo</h4>
+                <h5>Demo</h5>
+                <p>Demo</p>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section className='home-wrapper-2 py-5'>
-      <div className='container-xxl'>
-        <div className='row'>
-          <div className='col-12'>
-            <div className='servies d-flex align-items-center justify-content-between'>
-              <div className='d-flex align-items-center gap-15'>
-                <img src='image/service.png' alt='services' />
-                <div>
-                  <h6>Free Shipping</h6>
-                  <p className='mb-0'>From all orders over 500.000VND</p>
-                </div>
-              </div>
-              <div className='d-flex align-items-center gap-15'>
-                <img src='image/service-02.png' alt='services' />
-                <div>
-                  <h6>Demo</h6>
-                  <p className='mb-0'>Demo</p>
-                </div>
-              </div>
-              <div className='d-flex align-items-center gap-15'>
-                <img src='image/service-03.png' alt='services' />
-                <div>
-                  <h6>Demo</h6>
-                  <p className='mb-0'>Demo</p>
-                </div>
-              </div>
-              <div className='d-flex align-items-center gap-15'>
-                <img src='image/service-04.png' alt='services' />
-                <div>
-                  <h6>Demo</h6>
-                  <p className='mb-0'>Demo</p>
-                </div>
-              </div>
-              <div className='d-flex align-items-center gap-15'>
-                <img src='image/service-05.png' alt='services' />
-                <div>
-                  <h6>Demo</h6>
-                  <p className='mb-0'>Demo</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
+    </Container>
     <section className='home-wrapper-2 py-5'>
       <div className='container-xxl'>
         <div className='row'>
@@ -321,16 +270,16 @@ const Home = () => {
         </div>
         <div className='row'>
           <div className='col-3'>
-          <BlogCard />
+            <BlogCard />
           </div>
           <div className='col-3'>
-          <BlogCard />
+            <BlogCard />
           </div>
           <div className='col-3'>
-          <BlogCard />
+            <BlogCard />
           </div>
           <div className='col-3'>
-          <BlogCard />
+            <BlogCard />
           </div>
         </div>
       </div>

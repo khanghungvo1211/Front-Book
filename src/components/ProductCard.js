@@ -11,9 +11,12 @@ const ProductCard = (props) => {
           } `}>
             <Link to=':id' className='product-card position-relative'>
                 <div className='wishlist-icon position-absolute'>
+                    <button className='border-0 bg-transparent'>
                     <Link>
                     <img src='image/wish.svg' alt='wishlist' />
+                   
                     </Link>
+                    </button>
                 </div>
                 <div className='product-image'>
                     <img src='image/suaruamat1.jpg' className='img-fluid' alt='product image' />
