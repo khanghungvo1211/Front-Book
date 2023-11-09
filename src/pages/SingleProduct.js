@@ -8,7 +8,7 @@ import ReactImageZoom from 'react-image-zoom';
 import { AiOutlineHeart } from "react-icons/ai";
 
 const SingleProduct = () => {
-  const props = { width: 1000, height: 600, zoomWidth: 600, img: "https://media.hcdn.vn/wysiwyg/minhchau/sua-tam-on-the-body-duong-am-huong-nuoc-hoa-500g-1.jpg" };
+  const props = { img: "https://media.hcdn.vn/catalog/product/c/a/ca-phe-dak-lak-tay-da-chet-toan-than-cocoon-200ml-2-1696313586_img_358x358_843626_fit_center.jpg" };
   const [orderedProduct, setorderedProduct] = useState(true);
   return (
     <>
@@ -20,17 +20,17 @@ const SingleProduct = () => {
             <div className='col-6'>
               <div className="main-product-image">
                 <div>
-                  <ReactImageZoom {...props} />
+                  <img src={props.img} className="img-fluid w-100 my-4" alt="product" />
                 </div>
               </div>
               <div className='other-product-images d-flex flex-wrap gap-15'>
-                <div><img src='https://media.hcdn.vn/catalog/product/s/u/sua-tam-on-the-body-huong-nuoc-hoa-violet-dream-1000g-1687933774_img_358x358_843626_fit_center.jpg' className='img-fluid' alt='' />
+                <div><img src='https://media.hcdn.vn/catalog/product/c/a/ca-phe-dak-lak-tay-da-chet-toan-than-cocoon-200ml-2-1696313586_img_358x358_843626_fit_center.jpg' className='img-fluid' alt='' />
                 </div>
-                <div><img src='https://media.hcdn.vn/catalog/product/s/u/sua-tam-on-the-body-huong-nuoc-hoa-violet-dream-1000g-1687933774_img_358x358_843626_fit_center.jpg' className='img-fluid' alt='' />
+                <div><img src='https://media.hcdn.vn/catalog/product/c/a/ca-phe-dak-lak-tay-da-chet-toan-than-cocoon-200ml-3-1696313587_img_358x358_843626_fit_center.jpg' className='img-fluid' alt='' />
                 </div>
-                <div><img src='https://media.hcdn.vn/catalog/product/s/u/sua-tam-on-the-body-huong-nuoc-hoa-violet-dream-1000g-1687933774_img_358x358_843626_fit_center.jpg' className='img-fluid' alt='' />
+                <div><img src='https://media.hcdn.vn/catalog/product/c/a/ca-phe-dak-lak-tay-da-chet-toan-than-cocoon-200ml-3-1696313587_img_358x358_843626_fit_center.jpg' className='img-fluid' alt='' />
                 </div>
-                <div><img src='https://media.hcdn.vn/catalog/product/s/u/sua-tam-on-the-body-huong-nuoc-hoa-violet-dream-1000g-1687933774_img_358x358_843626_fit_center.jpg' className='img-fluid' alt='' />
+                <div><img src='https://media.hcdn.vn/catalog/product/c/a/ca-phe-dak-lak-tay-da-chet-toan-than-cocoon-200ml-3-1696313587_img_358x358_843626_fit_center.jpg' className='img-fluid' alt='' />
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ const SingleProduct = () => {
               <div className='main-product-details'>
                 <div className='border-bottom'>
                   <h3>
-                    Sua Tam On: The Body Duong Am Huong Quyen Ru 1000g
+                  Dak Lak Coffee Body Polish
                   </h3>
                 </div>
                 <div className='border-bottom py-3'>
@@ -69,7 +69,7 @@ const SingleProduct = () => {
                     <h3 className='product-heading'>Tags: </h3> <p className='product-data'>Skin Care</p>
                   </div>
                   <div className='d-flex gap-10 flex-column mt-2 mb-3'>
-                    <h3 className='product-heading'>Smell: </h3> 
+                    <h3 className='product-heading'>Smell: </h3>
                     <div className='d-flex flex-wrap gap-15'>
                       <span className='badge border-1 bg-white text-dark border-secondary'>Pearl</span>
                       <span className='badge border-1 bg-white text-dark border-secondary'>Pearl</span>
@@ -79,30 +79,30 @@ const SingleProduct = () => {
                   </div>
                   <div className='d-flex align-items-center gap-15 flex-row mt-2 mb-3'>
                     <h3 className='product-heading'>Quantity </h3>
-                  <div className=''>
+                    <div className=''>
                       <input type='number' name='' min={1} max={10}
-                      className='form-control'
-                       style={{width: "70px"}} id='' />
+                        className='form-control'
+                        style={{ width: "70px" }} id='' />
                     </div>
                     <div className="d-flex align-items-center gap-30 ms-5">
-                    <button
-                      className="button border-0"
-                      data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop"
-                      type="button"
-                    >
-                      Add to Cart
-                    </button>
-                    <button className="button signup">Buy It Now</button>
-                  </div>
+                      <button
+                        className="button border-0"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                        type="button"
+                      >
+                        Add to Cart
+                      </button>
+                      <button className="button signup">Buy It Now</button>
+                    </div>
                     <div>
                     </div>
                   </div>
                   <div className='d-flex align-items-center gap-15'>
                     <div>
                       <a href=''>
-                      <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
-                        </a>
+                        <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const SingleProduct = () => {
               <h4>Description</h4>
               <div className='bg-white p-3'>
 
-                <p className='bg-white p-3'>Sữa Tắm On: The Body Perfume Shower Body Wash Hương Nước Hoa là dòng sữa tắm đến từ thương hiệu chăm sóc da On: The Body (thuộc tập đoàn LG của Hàn Quốc). Lấy nguồn cảm hứng từ nước hoa với hương thơm bất tận, Viện nghiên cứu Sent Berry – LG Household & Health care, Hàn Quốc đã sáng chế ra dòng sữa tắm hương nước hoa On: The Body Perfume cao cấp, gửi gắm vẻ đẹp và hương thơm từ thiên nhiên, đánh thức các giác quan với hương thơm độc đáo, mới lạ.</p>
+                <p className='bg-white p-3'>Tẩy Da Chết Toàn Thân Cocoon Cà Phê Đắk Lắk là dòng tẩy tế bào chết toàn thân từ thương hiệu mỹ phẩm Cocoon của Việt Nam là một trong những sản phẩm với thành phần tự nhiên có nguồn gốc trong nước như hạt cà phê Đắk Lắk nguyên chất xay nhuyễn, hòa quyện cùng bơ cacao Tiền Giang giúp loại bỏ tế bào chết hiệu quả, làm đều màu da, mang lại năng lượng, giúp da trở nên mềm mại và rạng rỡ giúp mang đến cho bạn sản phẩm thuần chay tốt nhất với niềm tự hào từ nguyên liệu thuần Việt.</p>
               </div>
             </div>
           </div>
@@ -150,7 +150,7 @@ const SingleProduct = () => {
                       </div>
                     )}
                   </div>
-                  <div  className='review-form py-4'>
+                  <div className='review-form py-4'>
                     <h4>Write a review</h4>
                     <form action="" className="d-flex flex-column gap-15">
 

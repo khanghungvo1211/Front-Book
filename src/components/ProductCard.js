@@ -19,13 +19,13 @@ const ProductCard = (props) => {
                     </button>
                 </div>
                 <div className='product-image'>
-                    <img src='image/suaruamat1.jpg' className='img-fluid' alt='product image' />
-                    <img src='image/suaruamat2.jpg' className='img-fluid' alt='product image' />
+                    <img src='image/sanpham1.jpg' className='img-fluid' alt='product image' />
+                    <img src='image/sanpham1(change).jpg' className='img-fluid' alt='product image' />
                 </div>
                 <div className='product-detail'>
-                    <h6 className='brand'>Havels</h6>
+                    <h6 className='brand'>Cocoon</h6>
                     <h5 className='product-title'>
-                        Demo
+                    Dak Lak Coffee Face Polish
                     </h5>
                     <ReactStars
                         count={5}

@@ -17,8 +17,8 @@ const SingleBlog = () => {
               <Link to="/beautyblog" className="d-flex align-items-center gap-10">
                 <HiOutlineArrowLeft className="fs-4" /> Go back to BeautyBlog
               </Link>
-              <h3 className="title">A Beautiful Sunday Morning Renaissance</h3>
-              <img src='image/brand-01.png' className="img-fluid w-100 my-4" alt="blog" />
+              <h3 className="title">Tell you the 8 most popular Korean whitening shower gels today</h3>
+              <img src='image/blog.jpg' className="img-fluid w-100 my-4" alt="blog" />
               <p>
                 You’re only as good as your last collection, which is an
                 enormous pressure. I think there is something about luxury –

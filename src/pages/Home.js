@@ -5,72 +5,55 @@ import BlogCard from '../components/BlogCard'
 import ProductCard from '../components/ProductCard'
 import FlashSale from '../components/FlashSale'
 import { Container } from 'react-bootstrap'
-
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 const Home = () => {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true, // Enable auto-play
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: 0, // Set to 0 to remove padding
+  };
   return <>
-    <Container class1='home-wrapper-1 py-5'>
-      <div className='row'>
-        <div className='col-6'>
-          <div className='main-banner position-relative '>
-            <img src='image/main-banner.jpg'
-              className='img-fluid rounded-3'
-              alt='main banner' />
-            <div className='main-banner-content position-absolute'>
-              <h4>NEW PRODUCT</h4>
-              <h5>ROUGE COCO</h5>
-              <p>Mo ta sp</p>
-              <Link className='button'>SHOP NOW</Link>
+  <div className="banner-container">
+    <Container className="home-wrapper-1 py-5">
+      <div className="row">
+        <div className="col-lg-6 col-md-6 col-12">
+        <Slider {...sliderSettings}>
+          <div>
+            <img
+              src="image/bannermain1.png"
+              className="img-fluid rounded-3"
+              alt="main banner 1"
+            />
+            <div className="main-banner-content position-absolute">
             </div>
           </div>
-        </div>
-        <div className='col-6'>
-          <div className='d-flex flex-wrap gap-10 justify-content-between align-items-center'>
-            <div className='small-banner position-relative '>
-              <img src='image/catbanner-01.jpg'
-                className='img-fluid rounded-3'
-                alt='main banner' />
-              <div className='small-banner-content position-absolute'>
-                <h4>NEW PRODUCT</h4>
-                <h5>ROUGE COCO</h5>
-                <p>Mo ta <br />sp</p>
-              </div>
-
-            </div>
-            <div className='small-banner position-relative '>
-              <img src='image/catbanner-02.jpg'
-                className='img-fluid rounded-3'
-                alt='main banner' />
-              <div className='small-banner-content position-absolute'>
-                <h4>Demo</h4>
-                <h5>Demo</h5>
-                <p>Demo</p>
-              </div>
-
-            </div> <div className='small-banner position-relative '>
-              <img src='image/catbanner-03.jpg'
-                className='img-fluid rounded-3'
-                alt='main banner' />
-              <div className='small-banner-content position-absolute'>
-                <h4>Demo</h4>
-                <h5>Demo</h5>
-                <p>Demo</p>
-              </div>
-
-            </div> <div className='small-banner position-relative '>
-              <img src='image/catbanner-04.jpg'
-                className='img-fluid rounded-3'
-                alt='main banner' />
-              <div className='small-banner-content position-absolute'>
-                <h4>Demo</h4>
-                <h5>Demo</h5>
-                <p>Demo</p>
-              </div>
-
-            </div>
+          <div>
+            <img
+              src="image/banner2.jpg"
+              className="img-fluid rounded-3"
+              alt="main banner 2"
+            />
           </div>
-        </div>
+        </Slider>
       </div>
-    </Container>
+      <div className="col-lg-6 col-md-6 d-md-none d-lg-block">
+       <img
+              src="image/bannermain.png"
+              className="img-fluid rounded-3"
+              alt="main banner 1"
+            />
+    </div>
+    </div>
+  </Container >
+  </div>
     <section className='home-wrapper-2 py-5'>
       <div className='container-xxl'>
         <div className='row'>
@@ -81,56 +64,56 @@ const Home = () => {
                   <h6>High-end cosmetics</h6>
                   <p>10 items</p>
                 </div>
-                <img src='image/Untitled-1.jpg' alt='High-end cosmetics ' />
+                <img src='image/highend.png' alt='High-end cosmetics ' />
               </div>
               <div className='d-flex gap align-items-center'>
                 <div>
-                  <h6>High-end cosmetics</h6>
+                  <h6>Skin Care cosmetics</h6>
                   <p>10 items</p>
                 </div>
-                <img src='image/Untitled-1.jpg' alt='High-end cosmetics ' />
+                <img src='image/skincare.png' alt='High-end cosmetics ' />
               </div>
               <div className='d-flex gap align-items-center'>
                 <div>
-                  <h6>High-end cosmetics</h6>
+                  <h6>Make Up</h6>
                   <p>10 items</p>
                 </div>
-                <img src='image/Untitled-1.jpg' alt='High-end cosmetics ' />
+                <img src='image/makeup.png' alt='High-end cosmetics ' />
               </div>
               <div className='d-flex gap align-items-center'>
                 <div>
-                  <h6>High-end cosmetics</h6>
+                  <h6>Body Care</h6>
                   <p>10 items</p>
                 </div>
-                <img src='image/Untitled-1.jpg' alt='High-end cosmetics ' />
+                <img src='image/bodycare.png' alt='High-end cosmetics ' />
               </div>
               <div className='d-flex gap align-items-center'>
                 <div>
-                  <h6>High-end cosmetics</h6>
+                  <h6>Personal Care</h6>
                   <p>10 items</p>
                 </div>
-                <img src='image/Untitled-1.jpg' alt='High-end cosmetics ' />
+                <img src='image/personalcare.png' alt='High-end cosmetics ' />
               </div>
               <div className='d-flex gap align-items-center'>
                 <div>
-                  <h6>High-end cosmetics</h6>
+                  <h6>Perfume</h6>
                   <p>10 items</p>
                 </div>
-                <img src='image/Untitled-1.jpg' alt='High-end cosmetics ' />
+                <img src='image/perfume.png' alt='High-end cosmetics ' />
               </div>
               <div className='d-flex gap align-items-center'>
                 <div>
-                  <h6>High-end cosmetics</h6>
+                  <h6>Functional Food</h6>
                   <p>10 items</p>
                 </div>
-                <img src='image/Untitled-1.jpg' alt='High-end cosmetics ' />
+                <img src='image/funfood.png' alt='High-end cosmetics ' />
               </div>
               <div className='d-flex gap align-items-center'>
                 <div>
-                  <h6>High-end cosmetics</h6>
+                  <h6>Hair Care</h6>
                   <p>10 items</p>
                 </div>
-                <img src='image/Untitled-1.jpg' alt='High-end cosmetics ' />
+                <img src='image/haircare.png' alt='High-end cosmetics ' />
               </div>
             </div>
           </div>
@@ -148,53 +131,6 @@ const Home = () => {
           <ProductCard />
           <ProductCard />
         </div>
-      </div>
-    </section>
-    <section className='famous-wrapper py-5 home-wrapper-2'>
-      <div className='container-xxl'>
-        <div className='row'>
-          <div className='col-3'>
-            <div className='famous-card position-relative'>
-              <img src='image/sp2.jpg' className='img-fluid' alt='group' />
-              <div className='famous-content position-absolute'>
-                <h5>Demo</h5>
-                <h6>Nuoc Hoa Hong</h6>
-                <p>From 200.000 to 500.000</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-3'>
-            <div className='famous-card position-relative'>
-              <img src='image/sp2.jpg' className='img-fluid' alt='group' />
-              <div className='famous-content position-absolute'>
-                <h5>Demo</h5>
-                <h6>Nuoc Hoa Hong</h6>
-                <p>From 200.000 to 500.000</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-3'>
-            <div className='famous-card position-relative'>
-              <img src='image/sp2.jpg' className='img-fluid' alt='group' />
-              <div className='famous-content position-absolute'>
-                <h5>Demo</h5>
-                <h6>Nuoc Hoa Hong</h6>
-                <p>From 200.000 to 500.000</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-3'>
-            <div className='famous-card position-relative'>
-              <img src='image/sp2.jpg' className='img-fluid' alt='group' />
-              <div className='famous-content position-absolute'>
-                <h5>Demo</h5>
-                <h6>Nuoc Hoa Hong</h6>
-                <p>From 200.000 to 500.000</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
     <section className='flash-sale-wrapper py-5 home-wrapper-2'>

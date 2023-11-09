@@ -7,12 +7,12 @@ const FlashSale = () => {
         <div className='flash-sale-product-card'>
             <div className='d-flex justify-content-between'>
                 <div>
-                    <img src='image/watch.jpg' className='img-fluid' alt='watch' />
+                    <img src='image/product3.jpg' className='img-fluid' alt='watch' />
                 </div>
                 <div className='flash-sale-product-content'>
-                    <h5 className='brand'>Demo</h5>
+                    <h5 className='brand'>Anessa</h5>
                     <h6 className='title'>
-                        Demo
+                    Perfect UV Sunscreen Skincare Milk N SPF50+ PA++++
                     </h6>
                     <ReactStars
                         count={5}

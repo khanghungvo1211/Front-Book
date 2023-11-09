@@ -102,14 +102,14 @@ const AllProduct = () => {
                   <div className="random-products mb-3 d-flex">
                     <div className="w-50">
                       <img
-                        src="image/watch.jpg"
+                        src="image/skincare.jpg"
                         className="img-fluid"
                         alt="watch"
                       />
                     </div>
                     <div className="w-50">
                       <h5>
-                        Sp Demo
+                      Micellar Water 3-in-1 Refreshing Even For Sensitive Skin
                       </h5>
                       <ReactStars
                         count={5}
@@ -124,14 +124,14 @@ const AllProduct = () => {
                   <div className="random-products d-flex">
                     <div className="w-50">
                       <img
-                        src="image/watch.jpg"
+                        src="image/skincare.jpg"
                         className="img-fluid"
                         alt="watch"
                       />
                     </div>
                     <div className="w-50">
                       <h5>
-                        Sp Demo
+                      Micellar Water 3-in-1 Refreshing Even For Sensitive Skin
                       </h5>
                       <ReactStars
                         count={5}
