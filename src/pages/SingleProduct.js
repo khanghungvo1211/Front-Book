@@ -4,7 +4,6 @@ import Meta from "../components/Meta";
 import ProductCard from '../components/ProductCard';
 import BreadCrumb from "../components/BreadCrumb";
 import ReactStars from 'react-rating-stars-component';
-import ReactImageZoom from 'react-image-zoom';
 import { AiOutlineHeart } from "react-icons/ai";
 
 const SingleProduct = () => {

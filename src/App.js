@@ -12,7 +12,6 @@ import Signup from './pages/Signup';
 import Forgotpassword from './pages/Forgotpassword';
 import Resetpassword from './pages/Resetpassword';
 import SingleBlog from './pages/SingleBlog';
-import Wishlist from './pages/Wishlist';
 import SingleProduct from './pages/SingleProduct';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
@@ -38,7 +37,6 @@ function App() {
               <Route path='signup' element={<Signup />} />
               <Route path='forgot-password' element={<Forgotpassword />} />
               <Route path='reset-password' element={<Resetpassword />} />
-              <Route path='wishlist' element={<Wishlist />} />
           </Route>
         </Routes>
        </BrowserRouter>
